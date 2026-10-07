@@ -1,13 +1,17 @@
-<!-- داخل <head> -->
-<link rel="manifest" href="manifest.webmanifest">
-
-<!-- قبل إغلاق </body> -->
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch((err) => {
-      console.warn('Service Worker registration failed:', err);
-    });
-  });
-}
-</script>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expiry Manager</title>
+  <meta http-equiv="refresh" content="0; url=./Expiry_Manager_Phase1.html">
+</head>
+<body>
+  <p>Opening Expiry Manager...</p>
+  <p>
+    <a href="./Expiry_Manager_Phase1.html">Open Expiry Manager</a>
+  </p>
+</body>
+</html>
+```
